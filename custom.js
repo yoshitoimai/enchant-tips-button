@@ -1,0 +1,3 @@
+gameStart = function(core) {
+
+};
