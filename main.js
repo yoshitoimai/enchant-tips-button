@@ -12,6 +12,9 @@ window.onload = function() {
 	core = new Core(DISPLAY_WIDTH, DISPLAY_HEIGHT);
 	core.fps = FPS;
 
+	//画像を読み込みます
+	preroadImage(core);
+
 	// 画像の読み込みが完了した時に呼ばれます
 	core.onload = function(){
 		gameStart(core);
