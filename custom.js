@@ -14,7 +14,7 @@ gameStart = function(core) {
 	core.rootScene.addChild(button_left);
 
 	button_left.addEventListener(Event.TOUCH_START, function(){
-
+		button_left.tl.scaleTo(1.1, 1.1, 1).scaleTo(1, 1, 1);
 	});
 
 	// 右へ移動するボタン
@@ -23,5 +23,9 @@ gameStart = function(core) {
 	button_right.x = 221;
 	button_right.y = 456;
 	core.rootScene.addChild(button_right);
+
+	button_right.addEventListener(Event.TOUCH_START, function(){
+		button_right.tl.scaleTo(1.1, 1.1, 1).scaleTo(1, 1, 1);
+	});
 
 };
