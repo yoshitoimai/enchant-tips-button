@@ -21,7 +21,7 @@ gameStart = function(core) {
 	button_left.addEventListener(Event.TOUCH_START, function(){
 		button_left.tl.scaleTo(1.1, 1.1, 1).scaleTo(1, 1, 1);
 
-
+		player.x -= 1;
 
 	});
 
@@ -35,7 +35,7 @@ gameStart = function(core) {
 	button_right.addEventListener(Event.TOUCH_START, function(){
 		button_right.tl.scaleTo(1.1, 1.1, 1).scaleTo(1, 1, 1);
 
-
+		player.x += 1;
 
 	});
 
