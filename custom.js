@@ -13,6 +13,10 @@ gameStart = function(core) {
 	button_left.y = 456;
 	core.rootScene.addChild(button_left);
 
+	button_left.addEventListener(Event.TOUCH_START, function(){
+
+	});
+
 	// 右へ移動するボタン
 	var button_right = new Sprite(100, 24);
 	button_right.image = core.assets['button_right.png'];
