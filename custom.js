@@ -1,10 +1,15 @@
 preroadImage = function(core) {
 
-	core.preload('button_left.png', 'button_right.png');
+	core.preload('button_left.png', 'button_right.png', 'player.png');
 
 };
 
 gameStart = function(core) {
+
+	var player = new ActionSprite('player.png', 32, 32);
+	player.x = 144;
+	player.y = 400;
+	core.rootScene.addChild(player);
 
 	// 左へ移動するボタン
 	var button_left = new Sprite(100, 24);
@@ -15,6 +20,9 @@ gameStart = function(core) {
 
 	button_left.addEventListener(Event.TOUCH_START, function(){
 		button_left.tl.scaleTo(1.1, 1.1, 1).scaleTo(1, 1, 1);
+
+
+
 	});
 
 	// 右へ移動するボタン
@@ -26,6 +34,9 @@ gameStart = function(core) {
 
 	button_right.addEventListener(Event.TOUCH_START, function(){
 		button_right.tl.scaleTo(1.1, 1.1, 1).scaleTo(1, 1, 1);
+
+
+
 	});
 
 };
